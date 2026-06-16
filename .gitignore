@@ -1,0 +1,40 @@
+# Python caches
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments
+.venv*/
+venv/
+env/
+.env
+.env.*
+
+# Local data and extracted archives
+/data/raw/
+/data/*.parquet
+wnn_starterpack/
+*.zip
+*.tar.gz
+
+# Generated ML artifacts (ignore all except the packaged submission weights)
+/models/*
+!/models/submission/
+/models/submission/*
+!/models/submission/gru/
+/models/submission/gru/*
+!/models/submission/gru/*.pt
+/outputs/
+/submissions/
+
+# Notebook/editor noise
+.ipynb_checkpoints/
+.vscode/
+.idea/
+
+# OS files
+Thumbs.db
+.DS_Store
